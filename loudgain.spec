@@ -3,7 +3,7 @@ Version: 0.6.8
 %forgemeta
 
 Name: %{repo}
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: ReplayGain 2.0 audio loudness normalizer
 License: BSD
 URL: %{forgeurl}
@@ -53,6 +53,9 @@ modify the actual audio data.
 
 
 %changelog
+* Tue Aug 03 2021 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 0.6.8-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild
+
 * Wed Feb 03 2021 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 0.6.8-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild
 
