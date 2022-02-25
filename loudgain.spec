@@ -11,6 +11,7 @@ Source0: %{forgesource}
 
 # https://github.com/Moonbase59/loudgain/pull/37
 Patch0: hardened-build.patch
+Patch1: fix_ffmpeg5.patch
 
 BuildRequires: cmake
 BuildRequires: gcc-c++
@@ -28,7 +29,7 @@ modify the actual audio data.
 
 
 %prep
-%forgeautosetup
+%forgeautosetup -p1
 
 
 %build
