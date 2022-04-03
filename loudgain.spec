@@ -3,7 +3,7 @@ Version: 0.6.8
 %forgemeta
 
 Name: %{repo}
-Release: 5%{?dist}
+Release: 6%{?dist}
 Summary: ReplayGain 2.0 audio loudness normalizer
 License: BSD
 URL: %{forgeurl}
@@ -15,7 +15,7 @@ Patch1: fix_ffmpeg5.patch
 
 BuildRequires: cmake
 BuildRequires: gcc-c++
-BuildRequires: ffmpeg-devel
+BuildRequires: ffmpeg-free-devel
 BuildRequires: libebur128-devel
 BuildRequires: taglib-devel
 
@@ -54,6 +54,9 @@ modify the actual audio data.
 
 
 %changelog
+* Sun Apr  3 2022 Peter Oliver <rpm@mavit.org.uk> - 0.6.8-6
+- Build against ffmpeg-free from Fedora.
+
 * Wed Feb 09 2022 RPM Fusion Release Engineering <sergiomb@rpmfusion.org> - 0.6.8-5
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_36_Mass_Rebuild
 
